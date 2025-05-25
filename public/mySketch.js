@@ -43,7 +43,7 @@ function setup() {
       } else if (data.event === "measurement") {
         // temperature
         const newTemperature = data.measurements.temperature;
-        const i = map(newTemperature, 23, 27, 0, 9);
+        const i = map(newTemperature, 30, 40, 0, 9);
         let newPalette = [];
 
         if (i + 2 > 9) {
@@ -63,12 +63,12 @@ function setup() {
 
         // humidity
         const newHumidity = data.measurements.humidity;
-        const n = map(newHumidity, 30, 100, 128, 10, true);
+        const n = map(newHumidity, 50, 100, 128, 50, true);
         opacity = toHex(n);
 
         // gsr
         const newGSR = data.measurements.gsr;
-        const v = map(newGSR, 60, 300, 0.005, 0.001, true);
+        const v = map(newGSR, 0, 300, 0.005, 0.001, true);
 
         for (const orbit of orbits) {
           console.log(v);
