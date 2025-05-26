@@ -229,7 +229,7 @@ class Orbit {
   show() {
     noFill();
     stroke("#fffbe611");
-    strokeWeight(1);
+    strokeWeight(min(width, height) * 0.0027);
     push();
     translate(this.x, this.y);
     rotate(this.rotation);
