@@ -28,6 +28,8 @@ function toHex(n) {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  // createCanvas(4961, 2800);
+  // noLoop();
   sun = new Sun();
   socket = new WebSocket("ws://localhost:8080");
 
@@ -68,7 +70,7 @@ function setup() {
 
         // gsr
         const newGSR = data.measurements.gsr;
-        const v = map(newGSR, 0, 300, 0.005, 0.001, true);
+        const v = map(newGSR, 200, 500, 0.005, 0.001, true);
 
         for (const orbit of orbits) {
           console.log(v);
