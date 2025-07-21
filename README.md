@@ -4,9 +4,13 @@ An interactive solar system visualization that responds to real-time biometric d
 
 ## Project Overview
 
+![Photo of the project](./images/project.webp)
+
 This project creates a living, breathing solar system that changes based on your emotional and physical state. Using sensors to measure heart rate, galvanic skin response (GSR), temperature, and humidity, the visualization adapts its colors, opacity, and planetary movement to reflect your biometric data in real-time.
 
 ### The Concept
+
+![Photo of the project](./images/screenshot.webp)
 
 The visualization represents a poetic interpretation of human emotion through space:
 
@@ -58,7 +62,7 @@ The project consists of three main components:
 
 ### Wiring Diagram
 
-![Wiring diagram for Arduino Nano](./wiring-diagram.svg)
+![Wiring diagram for Arduino Nano](./images/wiring-diagram.svg)
 
 - **DHT11**: Digital pin D2
 - **GSR Sensor**: Analog pin A2
