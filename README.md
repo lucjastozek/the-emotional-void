@@ -64,7 +64,7 @@ The project consists of three main components:
 
 ![Wiring diagram for Arduino Nano](./images/wiring-diagram.svg)
 
-- **DHT11**: Digital pin D2
+- **DHT11**: Digital pin D1
 - **GSR Sensor**: Analog pin A2
 - **Heart Rate Sensor**: Analog pin A0
 - **LED**: Built-in LED (pin 13) for heartbeat indication
